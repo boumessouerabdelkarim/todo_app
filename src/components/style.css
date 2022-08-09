@@ -1,0 +1,33 @@
+.header{
+    border: 5px,solid,white;
+    background-color: aliceblue;
+    margin: 20px;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-around;
+    flex-direction: column;
+}
+h1{
+    color: aqua;
+
+}
+.task{
+    border: 5px,solid,white;
+    background-color: rgb(241, 244, 247);
+    align-items: baseline;
+    margin: 20px;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-around;
+    
+
+}
+.tasks{
+    border: 5px,solid,white; 
+    margin: 20px;
+    
+}
+.edit{
+    display: flex;
+    align-items: baseline;
+}

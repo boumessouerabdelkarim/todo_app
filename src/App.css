@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+  background-color: rgb(88, 88, 88);
+  color: black;
+}
+.contanier
+{
+  border: 2px,solid,white;
+  margin: 20px;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-around;
+  flex-direction: column;
+}
+button{
+  background-color: #0f31ee;
+border-radius: 50px;
+border-width: 0;
+box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+color: #f2f0f5;
+cursor: pointer;
+display: inline-block;
+font-family: Arial, sans-serif;
+font-size: 1em;
+height: 50px;
+padding: 0 25px;
+transition: all 200ms;
+}
