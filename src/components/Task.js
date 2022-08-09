@@ -11,7 +11,7 @@ const Task = ({ task }) => {
     done: task.done,
   });
   return (
-    <div className="task">
+    <div className={`todo-item ${task.done ? "done" : "undone"}`}>
       <>
         <h2>{task.id}</h2>
         <h2>{task.description}</h2>
@@ -34,7 +34,8 @@ const Task = ({ task }) => {
               onChange={(e) => setText({ ...text, done: e.target.checked })}
             />
             <label> is done</label>
-            <button style={{ witdh:50,margin:5}} onClick={() => {dispatch(editTask(text));setShow(false)}}>sauvgarder</button>
+            <button style={{ witdh:50,margin:5}} onClick={() => {dispatch(editTask(text));setShow(false)}}>Sauvgarder</button>
+            <button style={{ witdh:50,margin:5}} onClick={() => {setShow(false)}}>Annuler</button>
           </div>
         ) : null}
         <button style={{ witdh:50,margin:5}} onClick={() => {dispatch(deleteTask(task.id));setShow(false)}}>supprimer</button>

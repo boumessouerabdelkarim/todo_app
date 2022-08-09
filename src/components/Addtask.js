@@ -12,7 +12,7 @@ const Addtask = () => {
   const dispatch = useDispatch();
 
   return (
-    <>
+    <div className="tasks">
       <h1>ajouter une tache</h1>
       <div className="task">
         <h3> description de tache</h3>
@@ -24,7 +24,7 @@ const Addtask = () => {
 
         <button style={{margin:5}} onClick={() => dispatch(addTask(text))}>Ajouter</button>
       </div>
-    </>
+    </div>
   );
 };
 
